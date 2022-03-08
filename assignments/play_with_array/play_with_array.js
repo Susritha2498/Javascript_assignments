@@ -1,12 +1,6 @@
 function getEven(arr) {
-    let res = []
-    let n = arr.length
-    for(i=0;i<n;i++){
-        if(arr[i]%2==0){
-            res.push(arr[i])
-        }
-    }
-    return res
+   return arr.filter(x=>(x%2===0))
+    
     /* 
         Return an array containing only even numbers as a result
         Example
@@ -22,6 +16,7 @@ function multiplyByN(arr, n) {
     return arr.map(x=>x*n)
 
     /* 
+    return arr.filter(ele=>ele%2===0)
         Return an array whose elements are multiplied by n
         Example
             Input: [1,3,4,55], 3
