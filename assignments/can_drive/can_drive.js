@@ -2,22 +2,12 @@ function CanDrive(hasDrivingLiscence, isTired, isSober) {
     // Write you code here
     if (hasDrivingLiscence)
     {
-        if(isSober)
+        if(!isSober || isTired)
         {
-            if(isTired)
-            {
-                return "You shouldn't drive"
-            }
-            else
-            {
-                return "You can drive"
-            }
+          return "You shouldn't drive"
+        }
+        return "You can drive"
             
-        }
-        else{
-            return "You shouldn't drive"
-        }
-
     }    
     else
     {
