@@ -1,4 +1,6 @@
 function getEven(arr) {
+   return arr.filter(x=>(x%2===0))
+    
     /* 
         Return an array containing only even numbers as a result
         Example
@@ -11,7 +13,10 @@ function getEven(arr) {
 }
 
 function multiplyByN(arr, n) {
+    return arr.map(x=>x*n)
+
     /* 
+    return arr.filter(ele=>ele%2===0)
         Return an array whose elements are multiplied by n
         Example
             Input: [1,3,4,55], 3
@@ -21,6 +26,8 @@ function multiplyByN(arr, n) {
 }
 
 function removeNthElement(arr, n) {
+    arr.splice(n,1)
+    return arr
     /*
         Return the array with the element present at index n removed
         Example
