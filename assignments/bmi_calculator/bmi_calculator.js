@@ -2,7 +2,8 @@
 function BMICalculator(mass, height) {
     // Write your code here
     let BMI = (mass)/(height*height)
-    if (mass<=0 || height<=0){
+    if (mass<=0 || height<=0 || Number(mass)===NaN || Number(height) === NaN)
+    {
         return "INVALID INPUT"
     }
     return BMI
