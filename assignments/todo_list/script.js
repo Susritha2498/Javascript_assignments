@@ -1,6 +1,7 @@
 let getList = document.getElementById('Main')
 getList.addEventListener('click',addCompleteList)
 
+addCompleteList()
 
 let parent1 = document.getElementById('completed')
 let parent2 = document.getElementById('pending')
